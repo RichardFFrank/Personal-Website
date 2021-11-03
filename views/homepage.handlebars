@@ -1,0 +1,62 @@
+<h1>Hi, I'm Rich, thanks for stopping by.</h1>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div>This website serves as a sort of about me. To navigate around, I've added a list of things you may want to see
+        below.
+        <ul>
+          <li> <a href=./resume>This link</a> will take you to my resume page. You'll find my most up to date resume
+            there, as well as a link to download it for yourself.
+          <li> <a href=./portfolio>The portfolio page</a> really serves as a running list of all of the porjects I've
+            completed (read: started) so far.
+          <li> <a href=./contact>Contact Me.</a> Well, my LinkedIn is on each page, along with my email, but if that's
+            not enough you can also go to the contact me page and send me a note from there.
+        </ul>
+      </div>
+    </div>
+    {{!-- The section of code below is based on the carousel code from bootstrap here: https://getbootstrap.com/docs/5.0/components/carousel/
+    The outer div sets the carousel into the right side of the page (column 2), second div sets the start of the carousel, an the following divs allow for each
+    carousel item and the individual controls. --}}
+    <div class="col">
+      <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="sd.jpg" class="d-block w-100" style="max-width:200px; margin:auto;" alt="San Diego Vacation Picture">
+          </div>
+          <div class="carousel-item">
+            <img src="gf.jpg" class="d-block w-100" style="max-width:200px; margin:auto;" alt="New Years Eve Photo with Girl Friend">
+          </div>
+          <div class="carousel-item">
+            <img src="ba.JPG" class="d-block w-100" style="max-width:200px; margin:auto;" alt="Photo from the Belaire Corporate Offices">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{{!-- The section of code below is based on the concept of a bootstrap "card": https://getbootstrap.com/docs/5.0/components/card/ 
+The first div identified the location of the card and size, the second div contains the style theme information, and the remainder is the formatting of the card body
+in this case, my contact information.--}}
+<div class="card fixed-bottom" style="width: 24rem;">
+  <div class="bg-light">
+    <div class="card-body">
+      <h5 class="card-title">Contact Information</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Cybersecurity Consultant by Day - Student by Night</h6>
+
+      <a href="mailto:richard.f.frank@gmail.com" class="card-link">richard.f.frank@gmail.com</a>
+      <br>
+      <a src="www.linkedin.com/in/richard-f-frank" class="card-link">linkedin.com/in/richard-f-frank</a>
+    </div>
+  </div>
+</div>

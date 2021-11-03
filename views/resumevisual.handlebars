@@ -1,0 +1,141 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>I've tried to make it easy for you to review my resume.</h1>
+      <p>I've really given you three options to review it! You can expand the sections below, you can use the
+        scrollbox on the right, you can click the link below the scrollbox to download a pdf copy. If you have any
+        feedback (or questions) send me a message on the feedback page.</p>
+      {{!-- The section of code below is based on the accordion code from bootstrap here:
+      https://getbootstrap.com/docs/5.0/components/accordion/
+      The outer div sets up the accordion group, the second div layer sets the items within the accordion, the buttons provide 
+      controls for opening and closing each accordion item, and within the div "accordion-body" is where the content for the accordion is saved.--}}
+
+      <div class="accordion" id="resumeAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="employerOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Wavestone, NY - Senior Consultant
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="employerOne"
+            data-bs-parent="#resumeAccordion">
+            <div class="accordion-body text-body">
+              <strong>June 2019 - Present</strong>
+              <br>
+              <ul>
+                <li>Performed in-depth risk assessments of client’s IT systems, using various frameworks, and developed
+                  remediation plans by leveraging client’s risk-tolerance and resource availability.</li>
+                <li>Performed penetration tests on client’s web-applications, internal networks, and externally exposed
+                  assets to identify vulnerabilities and provide guidance to local teams to perform remediation.</li>
+                <li>Completed the development and roll-out of a cybersecurity maturation plan for a large aircraft
+                  manufacturing company consisting of: </li>
+                <ul>
+                  <li>The creation of 10+ corporate information security policies based on the NIST CSF.</li>
+                  <li>An updated network architecture incorporating next-gen firewall (NGFW) technologies to provide
+                    enhanced network segmentation between zones.</li>
+                  <li>of a Privileged Access Management (PAM) solution to secure access to sensitive assets for
+                    administration.</li>
+                  <li>The development of a corporate security awareness and training program based on current market
+                    trends which included training materials and a phishing campaign which led to a 25% decrease in
+                    overall potential compromises after the first exercise.</li>
+                </ul>
+                <li>Performed a SOC assessment for a multinational ICS/OT company (20B+ annual revenue) and guided the
+                  client through the RFP process to identify and select a new MSSP.</li>
+                <li>Developed cloud migration roadmap to transition websites and web applications from multiple
+                  distributed hosting providers to a consolidated AWS platform (1800 sites/applications, 200 providers).
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="employerTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              NYSTEC, NY - Senior consultant - Information Security
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="employerTwo"
+            data-bs-parent="#resumeAccordion">
+            <div class="accordion-body text-body">
+              <strong>Feb. 2018 - June 2019</strong>
+              <br>
+              <ul>
+                <li>Performed cyber risk assessments and developed cybersecurity program roadmaps for state and local
+                  government agencies.</li>
+                <li>Managed and participated in penetration testing engagements for clients across multiple industries.
+                  Experience spans network intrusion, web application, physical, and internal network penetration
+                  testing.</li>
+                <li>Designed and hosted tabletop tests to identify gaps in incident response and business continuity
+                  planning.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="employerThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              NYSTEC, NY - Senior Consultant – Program Manager
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="employerThree"
+            data-bs-parent="#resumeAccordion">
+            <div class="accordion-body text-body">
+              <strong>Feb. 2018 - June 2019</strong>
+              <br>
+              <ul>
+                <li>Managed design, development, and implementation of multiple health information technology projects,
+                  representing a $5M budget, 7 consultants, and 13,000 hours.</li>
+                <li>Managed 18 geographically dispersed consultants responsible for healthcare data analytics in public
+                  health agencies across New York State.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="education">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+              Education
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="education"
+            data-bs-parent="#resumeAccordion">
+            <div class="accordion-body text-body">
+              <ul>
+                <li><strong>Bachelor’s Degree - Computer Science</strong> - Oregon State University (Expected - May
+                  2022)</li>
+                <li><strong>Bachelor’s Degree - Economics</strong> - University at Albany – SUNY</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <iframe width="500" height="500" src="./RichardFrank-Resume.pdf"></iframe>
+      <br>
+      {{!-- Bootstrap allows you to create a button similar to how a link is created in vanilla html (using the a tag rather than button). --}}
+      <caption>If you want a copy for yourself: <a class="btn btn-primary btn-sm" role="button"
+          href="./RichardFrank-Resume.pdf" download="proposed_file_name">Download</a></caption>
+    </div>
+  </div>
+  
+{{!-- The section of code below is based on the concept of a bootstrap "card": https://getbootstrap.com/docs/5.0/components/card/ 
+The first div identified the location of the card and size, the second div contains the style theme information, and the remainder is the formatting of the card body
+in this case, my contact information.--}}
+  <div class="card" style="width: 24rem;">
+    <div class="bg-light">
+      <div class="card-body">
+        <h5 class="card-title">Contact Information</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Cybersecurity Consultant by Day - Student by Night</h6>
+
+        <a href="mailto:richard.f.frank@gmail.com" class="card-link">richard.f.frank@gmail.com</a>
+        <br>
+        <a src="www.linkedin.com/in/richard-f-frank" class="card-link">linkedin.com/in/richard-f-frank</a>
+      </div>
+    </div>
+  </div>
+ 
