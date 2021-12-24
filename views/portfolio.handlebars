@@ -4,16 +4,17 @@
 The first div identified the location of the card and size, the second div contains the style theme information, and the remainder is the formatting of the card body
 in this case, the content of my public portfolio.--}}
 
-    </div>
-      <div class="col">
-      <div class="card" style="width: 18rem; height: 20rem;">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 28rem;">
         <div class="card-body">
           <h5 class="card-title">Smallsh</h5>
           <p class="card-text">
             <strong>Language: </strong>C
             <br>
             <strong>Purpose: </strong>This tool is an implementation of a lightweight command shell, written in C. It contains several built in 
-            commands (cd, status, and exit) and supports all remaining commands via the exec family of functions.
+            commands (cd, status, and exit) that work as one would expect when using those commands in a Bash shell. All other commands are supported 
+            via the exec() family of functions. Smallsh also supports running foreground and background processes via the "&" operator.
           </p>
           <a href="https://github.com/RichardFFrank/Operating-Systems"
             class="btn btn-primary">Link to github</a>
@@ -21,26 +22,26 @@ in this case, the content of my public portfolio.--}}
       </div>
 
     </div>
-      <div class="row">
-    <div class="col">
-      <div class="card" style="width: 18rem; height: 20rem;">
-        <div class="card-body">
-          <h5 class="card-title">NYC Commute Assistant</h5>
-          <p class="card-text">
-            <strong>Language: </strong>Python
-            <br>
-            <strong>Purpose: </strong>
-          This scipt leverages real time data (format: GTFS-rt) provided by the NYC MTA to determine all trains scheduled to arrive at a given stop
-          and determines which trains the user can make based on a given walk time. This project is still a work-in-progress, next steps are to leverage the Google distance API
-          to pre-calculate the walk-time from a given location.   
-          </p>
-          <a href="https://github.com/RichardFFrank/Operating-Systems"
-            class="btn btn-primary">Link to github</a>
-        </div>
+      <div class="col">
+    <div class="card" style="width: 18rem; height: 28rem;">
+      <div class="card-body">
+        <h5 class="card-title">NYC Commute Assistant</h5>
+        <p class="card-text">
+          <strong>Language: </strong>Python
+          <br>
+          <strong>Purpose: </strong>
+          This script leverages real time data (format: GTFS-rt) provided by the NYC MTA to determine all trains
+          scheduled to arrive at a given stop
+          and determines which trains the user can make based on a given walk time. This project is still a
+          work-in-progress, next steps are to leverage the Google distance API
+          to pre-calculate the walk-time from a given location.
+        </p>
+        <a href="https://github.com/RichardFFrank/NYC-Commute-Assistant" class="btn btn-primary">Link to github</a>
       </div>
-    
+    </div>
+    </div>
     <div class="col">
-      <div class="card" style="width: 18rem; height: 20rem;">
+      <div class="card" style="width: 18rem; height: 28rem;">
         <div class="card-body">
           <h5 class="card-title">Assembly Showcase</h5>
           <p class="card-text"><strong>Language: </strong>x86 Assembly
@@ -49,7 +50,7 @@ in this case, the content of my public portfolio.--}}
             showcased includes string manipulation, macro and procedure implementation, and array functionalities.
           </p>
           <br>
-          <a href="https://github.com/RichardFFrank/Computer-Architecture-and-Assembly-Language/blob/main/Proj6_frankri.asm"
+          <a href="https://github.com/RichardFFrank/Computer-Architecture-and-Assembly-Language"
             class="btn btn-primary">Link to github</a>
         </div>
       </div>
